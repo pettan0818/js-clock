@@ -50,7 +50,8 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    // if assetsPublicPath set, become absolute-path. not-set, become relative-path.
+    assetsPublicPath: '',
 
     /**
      * Source Maps
